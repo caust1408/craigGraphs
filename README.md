@@ -10,3 +10,8 @@ Homework for topographical sorting
 We were required to create a dataset of our own and then sort it accordingly.
 My dataset was over making coffee and the steps required.
 Going into testGraph.js you can change the dataset to reflect a dataset of your choosing.  
+
+// FOR THE TEST //
+File to run: spf.js
+Ran with: d8 
+Assignment: Prints the shortest path out 
