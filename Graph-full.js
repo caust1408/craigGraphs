@@ -87,11 +87,13 @@ queue.push(s);
 while(queue.length > 0) {
 	var v = queue.shift();
 	if ( v !== undefined) {
-		print("Visited vertes: " + v);
+		//print("Visited vertes: " + v);
 	}
 	for (var i = 0; i < this.adj[v].length; i++) {
 		var w = this.adj[v][i];
+		//print('this is v and i: ' + JSON.stringify(w));
 			if(!this.marked[w]) {
+
 				this.edgeTo[w] = v;
 				this.marked[w] = true;
 				queue.push(w);
@@ -107,6 +109,7 @@ if (!this.hasPathTo(v)) {
 }
 var path = [];
 for (var i = v; i != source; i = this.edgeTo[i]) {
+	print('this is v: ' + v); 
 	path.push(i);
 }
 path.push(source);
